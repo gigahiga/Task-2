@@ -1,0 +1,13 @@
+language: python
+
+python:
+  - "3.8"
+
+install:
+  - pip install flask
+  - npm install mocha chai chai-http
+
+script:
+  - python app.py &
+  - sleep 3
+  - npm test
