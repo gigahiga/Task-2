@@ -1,7 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 //const app = "http://127.0.0.1:5000"; // change to ur localhost
-const app = require('../app.py');
+const app = 'http://127.0.0.1:5000';
 chai.use(chaiHttp);
 chai.should();
 
